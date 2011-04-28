@@ -73,6 +73,18 @@ Use this sample actions for login/logout with Google:
 ~~~
 
 
+Set to load the extensions in the main.php (by [DavidHHuan](http://www.yiiframework.com/user/2371/), thanx!)
+~~~
+
+'import'=>array(
+    'application.models.*',
+    'application.components.*',
+        'ext.eoauth.*',
+        'ext.eoauth.lib.*',
+),
+~~~
+
+
 ##Change Log
 
 ###September 10, 2010
