@@ -1,18 +1,10 @@
-Last news
----------
-Some time ago I developed this extension for [InDaHouseRulez SL](http://www.indahouserulez.com). I no longer work there, but I still support the extension.
-
-The extension was released under the [MIT license](http://www.opensource.org/licenses/mit-license.php), so I made a fork on [GitHub](https://github.com), where you'll find the latest version:
-
-[https://github.com/jorgebg/yii-eoauth](https://github.com/jorgebg/yii-eoauth)
-
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=jorgebg&url=https://github.com/jorgebg/yii-eoauth&title=yii-eoauth&language=en_GB&tags=github&category=software) 
-
 Introduction
 ------------
 EOAuthUserIdentity class implements IUserIdentity Yii interface and the OAuth protocol to authenticate a user.
 
 Based on Google's software.
+
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=jorgebg&url=https://github.com/jorgebg/yii-eoauth&title=yii-eoauth&language=en_GB&tags=github&category=software) 
 
 ###Resources
 * [OAuth](http://oauth.net/)
@@ -88,7 +80,10 @@ Set to load the extensions in the main.php (by [DavidHHuan](http://www.yiiframew
 ~~~
 
 
-##Change Log
+License
+---------
+Some time ago I developed this extension for [InDaHouseRulez SL](http://www.indahouserulez.com). I no longer work there, but I still support the extension.
 
-###September 10, 2010
-* Initial release.
+The extension was released under the [MIT license](http://www.opensource.org/licenses/mit-license.php), so I made a fork on [GitHub](https://github.com), where you'll find the latest version:
+
+[https://github.com/jorgebg/yii-eoauth](https://github.com/jorgebg/yii-eoauth)
