@@ -6,6 +6,8 @@ The extension was released under the [MIT license](http://www.opensource.org/lic
 
 [https://github.com/jorgebg/yii-eoauth](https://github.com/jorgebg/yii-eoauth)
 
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=jorgebg&url=https://github.com/jorgebg/yii-eoauth&title=yii-eoauth&language=en_GB&tags=github&category=software) 
+
 Introduction
 ------------
 EOAuthUserIdentity class implements IUserIdentity Yii interface and the OAuth protocol to authenticate a user.
