@@ -77,32 +77,6 @@ Set to load the extensions in the main.php (by [DavidHHuan](http://www.yiiframew
 ),
 ```
 
-Configure yii-eoauth in main.php
-
-```php
-'components' => array(
-    'eauth' => array(
-		'class' => 'ext.eauth.EAuth',
-		'popup' => true, // Use the popup window instead of redirecting.
-		'cache' => false, // Cache component name or false to disable cache. Defaults to 'cache'.
-		'cacheExpire' => 0, // Cache lifetime. Defaults to 0 - means unlimited.
-		'services' => array( // You can change the providers and their classes.
-			'google' => array(
-				'class' => 'GoogleOpenIDService',
-			),
-			'google_oauth' => array(
-				// register your app here: https://code.google.com/apis/console/
-				'class' => 'GoogleOAuthService',
-				'client_id' => 'xxxxxxxxxxxx.apps.googleusercontent.com',
-				'client_secret' => 'xxxxxxxxxxxxxxxxxxxxxxxx',
-				'title' => 'Google (OAuth)',
-			),
-		),
-	),
-),
-```
-
-
 
 License
 ---------
