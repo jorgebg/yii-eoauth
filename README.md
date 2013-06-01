@@ -26,8 +26,7 @@ Based on Google's software.
 Use this sample actions for login/logout with Google:
 
 
-~~~
-[php]
+```php
 
     public function actionLogin() {
 
@@ -64,20 +63,19 @@ Use this sample actions for login/logout with Google:
         $this->redirect(Yii::app()->homeUrl);
     }
 
-~~~
+```
 
 
 Set to load the extensions in the main.php (by [DavidHHuan](http://www.yiiframework.com/user/2371/), thanx!)
 
-~~~
-[php]
+```php
 'import'=>array(
     'application.models.*',
     'application.components.*',
         'ext.eoauth.*',
         'ext.eoauth.lib.*',
 ),
-~~~
+```
 
 
 License
