@@ -9,7 +9,7 @@ Based on Google's software.
 ###Resources
 * [OAuth](http://oauth.net/)
 * [InDaHouseRulez SL](http://www.indahouserulez.com)
-* [Google API DFP PHP Example web application](http://code.google.com/p/google-api-dfp-php/source/browse/trunk#trunk/webapp/lib) Currently not working, you can find the old implementation [here](https://code.google.com/p/oauth/source/browse/code/php/OAuth.php)
+* [Google API DFP PHP Example web application](http://code.google.com/p/google-api-dfp-php/source/browse/trunk#trunk/webapp/lib) This link is currently broken, [here is a working link](https://code.google.com/p/oauth/source/browse/code/php/OAuth.php)
 
 
 
