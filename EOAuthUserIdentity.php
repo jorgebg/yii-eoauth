@@ -23,6 +23,8 @@ class EOAuthUserIdentity extends EOAuthComponent implements IUserIdentity {
      * @var string OAuth consumer secret. Defaults to 'anonymous'
      */
     public $secret='anonymous';
+    
+    public $applicationName;
 
     /**
      * @var array|class OAuthProvider configuration|class.
@@ -101,9 +103,6 @@ class EOAuthUserIdentity extends EOAuthComponent implements IUserIdentity {
             // Set the scope (must match service endpoint).
             $scope = $this->scope;
 
-            // Set the application name as it is displayed on the authorization page.
-            $applicationName = Yii::app()->name;
-
             // Use the URL of the current page as the callback URL.
             $protocol = (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] == "on")
                     ? 'https://' : 'http://';
@@ -113,7 +112,7 @@ class EOAuthUserIdentity extends EOAuthComponent implements IUserIdentity {
 
             // Get request token.
             $token = EOAuthUtils::GetRequestToken($consumer, $scope,
-                    $this->provider->request_token_endpoint, $applicationName, $callbackUrl);
+                    $this->provider->request_token_endpoint, $this->applicationName, $callbackUrl);
 
             // Store consumer and token in session.
             $session['OAUTH_CONSUMER'] = $consumer;
