@@ -38,11 +38,13 @@ class EOAuthUtils extends EOAuthComponent {
 
     // Set parameters.
     $params = array();
-    $params['scope'] = $scope;
-    if (isset($applicationName)) {
+    if ($scope) {
+    	$params['scope'] = $scope;
+    }
+    if ($applicationName) {
       $params['xoauth_displayname'] = $applicationName;
     }
-    if (isset($callbackUrl)) {
+    if ($callbackUrl) {
       $params['oauth_callback'] = $callbackUrl;
     }
 
