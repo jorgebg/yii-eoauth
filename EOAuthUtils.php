@@ -110,10 +110,11 @@ class EOAuthUtils extends EOAuthComponent {
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
     $response = curl_exec($ch);
     $headers = curl_getinfo($ch);
+    $error = curl_error($ch);
     curl_close($ch);
 
     if ($headers['http_code'] != 200) {
-      throw new OAuthException($response);
+      throw new OAuthException($error);
     }
 
     return self::GetTokenFromQueryString($response);
